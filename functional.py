@@ -1,13 +1,14 @@
-word_list = ['test', 'grimm', 'word', 'grimm']
+word_list = ['test', 'grimm', 'meow', 'grimm']
+freqs = {x: word_list.count(x) for x in set(word_list)}
+print freqs
 
-def freq_single(word):
-	a=0
-	reduce(lambda a, b: a +=1 if b==word, word_list)
-	return a
+# print(reduce(lambda a, b: a+b if b=='grimm' else b, word_list))
 
-def freq_group(words):
-	a = 0
+# print(freq_single('test'))
+
+# def freq_group(words):
+# 	a = 0
 	
-def most_freq():
-	a = ''
-	reduce(lambda word_freqs: word_freqs
+# def most_freq():
+# 	a = ''
+# 	reduce(lambda word_freqs: word_freqs
